@@ -2,7 +2,7 @@ nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"
   .container
       
     .navbar-header
-      a href="/" class="nav-logo" 
+      = link_to("/", class:"nav-logo") do
         = image_tag "diandian.png", class:"brand-img"
       a href="/" class="navbar-brand" 阳光点点
       button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'
@@ -16,4 +16,4 @@ nav id="navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"
           li class=""
             a href="/" 简介
         li class=""
-          a href="/pages/about.html" 关于
+          = link_to "关于", "/pages/about.html", class:"nav-logo", relative:true
