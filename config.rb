@@ -58,9 +58,9 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
  
-(1..8).each do |i|
-  proxy "/pages/detail#{i}.html", "/pages/detail.html"
-end
+# (1..8).each do |i|
+#  proxy "/views/detail#{i}.html", "/views/detail.html"
+# end
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -71,10 +71,10 @@ configure :build do
 
   # Enable cache buster
   # activate :asset_hash
-
+  #  set :index_directory, "views"
+  set :index_file, "index.html"
   # Use relative URLs
   activate :relative_assets
-
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
