@@ -52,6 +52,7 @@ end
 #   end
 # end
 
+set :html_dir, 'views'
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
